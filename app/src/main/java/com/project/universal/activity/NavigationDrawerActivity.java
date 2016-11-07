@@ -197,12 +197,6 @@ public class NavigationDrawerActivity extends BaseActivity {
     }
 
     @Override
-    protected void onPostCreate(Bundle savedInstanceState) {
-        super.onPostCreate(savedInstanceState);
-        drawerToggle.syncState();
-    }
-
-    @Override
     public void onBackPressed() {
 
         Log.i(TAG, "Back");
