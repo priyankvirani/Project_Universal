@@ -1,0 +1,23 @@
+<resources>
+
+    <string name="app_name">ECUniversal</string>
+
+    <!-- Error -->
+    <string name="error_internet_check">Internet connection is not available. Please enable wifi or internet data.</string>
+
+    <!-- Other -->
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">Retry</string>
+    <string name="sing_in">SignIn</string>
+    <string name="sing_up">SignUp</string>
+
+    <!-- NavigationDrawer -->
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+
+
+    <string name="action_settings">Settings</string>
+
+
+</resources>
