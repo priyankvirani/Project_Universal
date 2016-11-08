@@ -52,7 +52,7 @@
                 android:maxLines="1"
                 android:text="Title"
                 android:textColor="@color/white"
-                android:textSize="@dimen/margin_large"
+                android:textSize="@dimen/margin_medium"
                 android:textStyle="bold" />
 
             <RelativeLayout

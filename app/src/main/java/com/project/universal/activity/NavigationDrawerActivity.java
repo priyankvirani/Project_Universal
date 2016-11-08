@@ -21,9 +21,12 @@ import android.widget.Toast;
 import com.project.universal.R;
 import com.project.universal.adapter.NavigationDrawerMenuAdapter;
 import com.project.universal.fragment.BaseFragment;
+import com.project.universal.fragment.HomeFragment;
 import com.project.universal.fragment.IUpdateFragment;
+import com.project.universal.fragment.UnderDevelopmentFragment;
 import com.project.universal.model.NavigationDrawerMenu;
 import com.project.universal.utlis.IConstants.IDrawerMenu;
+import com.project.universal.utlis.Utils;
 
 import java.util.ArrayList;
 
@@ -95,8 +98,10 @@ public class NavigationDrawerActivity extends BaseActivity {
 
                     case IDrawerMenu.HOME_ID:
                         toggleLeftDrawer();
+                        newContent = new HomeFragment();
                         break;
                     case IDrawerMenu.UNDER_DEVLOPMENT_ID:
+                        newContent = new UnderDevelopmentFragment();
                         break;
 
                 }
@@ -132,12 +137,26 @@ public class NavigationDrawerActivity extends BaseActivity {
 
         if (content == null) {
             Log.i(TAG, "content is null");
-            //switchContent(new MyOrderListFragment(), true);
+            switchContent(new HomeFragment(), true);
         }
         getSupportFragmentManager().addOnBackStackChangedListener(
                 onBackStackChangedListener);
 
 
+    }
+    @OnClick(R.id.imgHome)
+    public void launchHome() {
+        switchContent(new HomeFragment(), true);
+    }
+
+    @OnClick(R.id.imgSearch)
+    public void searchProduct() {
+        Utils.showToastShort(NavigationDrawerActivity.this, getString(R.string.under_development));
+    }
+
+    @OnClick(R.id.imgCart)
+    public void openCart() {
+        switchContent(new HomeFragment(), false);
     }
 
     private void setMenuAdapter() {
