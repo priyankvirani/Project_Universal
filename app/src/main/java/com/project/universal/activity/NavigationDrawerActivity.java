@@ -164,10 +164,10 @@ public class NavigationDrawerActivity extends BaseActivity {
 
 
         navigationDrawerMenuArrayList.add(new NavigationDrawerMenu(IDrawerMenu.HOME,
-                IDrawerMenu.HOME_ID, R.drawable.logo_home));
+                IDrawerMenu.HOME_ID, R.drawable.user));
 
         navigationDrawerMenuArrayList.add(new NavigationDrawerMenu(IDrawerMenu.UNDER_DEVELOPMENT,
-                IDrawerMenu.UNDER_DEVLOPMENT_ID, R.drawable.logo_home));
+                IDrawerMenu.UNDER_DEVLOPMENT_ID, R.drawable.user));
 
     }
 

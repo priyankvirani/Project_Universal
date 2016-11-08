@@ -26,7 +26,7 @@
             android:paddingLeft="@dimen/margin_small"
             android:paddingRight="@dimen/margin_small"
             android:textColor="@color/white"
-            android:textSize="@dimen/margin_medium" />
+            android:textSize="@dimen/font_size_medium" />
 
     </LinearLayout>
 

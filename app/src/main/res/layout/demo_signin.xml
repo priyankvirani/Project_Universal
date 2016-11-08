@@ -208,7 +208,7 @@
         <!--android:imeOptions="actionSend"-->
 
         <RadioGroup
-            android:id="@+id/login_registration_sex"
+            android:id="@+id/rgLoginRegistrationSex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -217,7 +217,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/login_registration_sex_man"
+                android:id="@+id/rdLoginRegistrationSexMan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
@@ -230,7 +230,7 @@
                 android:textSize="18sp"/>
 
             <RadioButton
-                android:id="@+id/login_registration_sex_woman"
+                android:id="@+id/rdLoginRegistrationSexWoman"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
@@ -243,7 +243,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/login_registration_confirm"
+            android:id="@+id/btnLoginRegistrationConfirm"
             style="@style/buttonPrimaryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -365,9 +365,9 @@
             android:text="@string/Log_me_in"/>
     </LinearLayout>
 
-    <!-- Forgotten password form form-->
+    <!-- Forgotten password form -->
     <LinearLayout
-        android:id="@+id/login_email_forgotten_form"
+        android:id="@+id/llLoginEmailForgottenForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -400,7 +400,7 @@
                 android:textSize="18sp"/>
 
             <ImageButton
-                android:id="@+id/login_email_forgotten_back_button"
+                android:id="@+id/imgLoginEmailForgottenBackButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="?attr/selectableItemBackgroundBorderless"
@@ -444,4 +444,3 @@
     </LinearLayout>
 
 </RelativeLayout>
-
