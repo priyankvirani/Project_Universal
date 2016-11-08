@@ -3,7 +3,7 @@ package com.project.universal.activity;
 import android.support.v7.app.AppCompatActivity;
 
 public class BaseActivity extends AppCompatActivity {
-    //second
+    //second11
 
 //	@Override
 //	protected void onResume() {
